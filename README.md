@@ -51,7 +51,7 @@ make
 ./url_shortener 127.0.0.1 8080 urls.txt
 ```
 #### Сокращение URL
-Чтобы сократить URL, отправьте POST-запрос на /shorten с телом JSON, содержащим оригинальный URL. Пример запроса с использованием curl:
+Чтобы сократить URL, отправьте c другого терминала POST-запрос на /shorten с телом JSON, содержащим оригинальный URL. Пример запроса с использованием curl:
 ```bash
 curl -X POST http://127.0.0.1:8080/shorten -H "Content-Type: application/json" -d '{"url": "https://www.google.com"}'
 ```
